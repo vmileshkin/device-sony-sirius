@@ -15,3 +15,4 @@
 #
 
 add_lunch_combo aosp_d6503-userdebug
+add_lunch_combo aosp_d6503-eng

@@ -92,6 +92,25 @@ PRODUCT_PACKAGES += \
     InCallUI \
     Stk
 
+# Ubuntu Overlay Files
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/ubuntu/70-android.rules:system/halium/lib/udev/rules.d/70-android.rules \
+    $(DEVICE_PATH)/ubuntu/android.conf:system/halium/etc/ubuntu-touch-session.d/android.conf \
+    $(DEVICE_PATH)/rootdir/system/halium/etc/apparmor.d/local/usr.bin.media-hub-server:system/halium/etc/apparmor.d/local/usr.bin.media-hub-server \
+    $(DEVICE_PATH)/ubuntu/touch.pa:system/halium/etc/pulse/touch.pa \
+    $(LOCAL_PATH)/ubuntu/apparmor.d/abstractions/base:system/halium/etc/apparmor.d/abstractions/base
+
+PRODUCT_PACKAGES += \
+    libubuntu_application_api \
+    libdroidmedia \
+    libui_compat_layer \
+    libsf_compat_layer \
+    libcameraservice \
+    libcamera_compat_layer \
+    minimediaservice \
+    libaudioflingerglue \
+    miniafservice
+
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi

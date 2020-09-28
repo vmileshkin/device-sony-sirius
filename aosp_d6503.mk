@@ -21,7 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 PRODUCT_NAME := aosp_d6503
 PRODUCT_DEVICE := sirius
-PRODUCT_MODEL := Xperia Z2 (AOSP)
+PRODUCT_MODEL := Xperia Z2
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
 

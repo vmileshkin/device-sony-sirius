@@ -30,6 +30,11 @@ PRODUCT_PLATFORM := shinano
 # Recovery config
 BOARD_SONY_INIT_FLAGS += -DDEV_BLOCK_FOTA_NUM="16"
 
+BOARD_USE_ENFORCING_SELINUX += false
+
 PRODUCT_VENDOR_KERNEL_HEADERS += $(DEVICE_PATH)/kernel-headers
 
 TARGET_TAP_TO_WAKE_NODE := "/sys/devices/virtual/input/max1187x/wakeup_gesture"
+
+# Radio
+TARGET_RIL_VARIANT := caf
